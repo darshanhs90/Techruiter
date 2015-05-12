@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="DemoApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="icon shortcut" href="images/bird.ico">
+
+    <title>Techruiter</title>
+
+    <link href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/flip.css" rel="stylesheet">
+         <link href='css/angular-carousel.css' rel='stylesheet' type='text/css'>
+        <link href='css/demo.css' rel='stylesheet' type='text/css'>
+        
+
+        <style>
+        #imgur{
+            height:250px;
+        }
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+
+    <script src="js/angular-carousel.min.js"></script>
+
+    <script src="js/app_skills_candidate.js"></script>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="DemoCtrl">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+            	<img src="images/work.png" class="navbar-brand">
+	          <a class="navbar-brand page-scroll" href="index_candidate.html"><span class="hidden-sm hidden-xs">Techruiter</span></a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="analysis_candidate.html">Interview Analysis</a><!-- check button for image tweets and text,search for srch -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="employers_info_candidate.html">Employers Information</a><!-- add reply all to this,filter tweets,follower tweets based on location
+
+                        notifications if new tweet comes,to push bullet,twitter time line should contain only tweets which have a lost of retweets,count set by user -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="skills_candidate.html">Skills Enhancement<span class="badge" style="color:Green">New</span></a>
+                    </li>
+                    <li>
+                        <a href="myprof_candidate.html">My Profile</a>
+                    </li>
+                </ul>
+                
+
+            </div>
+            
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+    <section class="section odd-section intro-section" style="color:black">
+ 		<div class="container" style="color:black">
+ 			<div class="jumbotron" style=";box-sizing: border-box;color:black;width:100%">
+        <div><h6 style="color:black"><i><b>Upload Resume</b></i></h6>
+        <div><input type="text" class="form form-control" placeholder="enter resume link" style="color:black"/><input type="button" class="btn btn-md btn-info" value="Submit" ng-click="parse()"/></div>
+        </div>
+ 			<!-- displaying on java or c++ or c# give video suggestions,interview suggestions,get notes out of videos -->
+
+        <div  ng-show="x==1">
+        <div class="row" style="color:black">
+            <p class="col-sm-12 text-center" style="color:black"> Java Material</p>
+         </div><br/>
+         <div class="row" >
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/gtQJXzi3Yns" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+            
+            <div><iframe width="300" height="200"  src="https://www.youtube.com/embed/8ZaTSedtf9M" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+         </div><br/>
+         <div class="row" >  
+            <span class="col-sm-2" width="75px"></span><button class="col-sm-2 btn btn-info" style="color:black" ng-click="gennotes()">Generate Notes</button><span class="col-sm-4" width="150px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-2"></span>
+            <br/>
+         </div><br/>
+         <div class="row" >
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/PAaqgTr7Cx4" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+            
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/tPFuVRbUTwA" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+         </div><br/>
+         <div class="row" >  
+            <span class="col-sm-2" width="75px"></span><button class="col-sm-2 btn btn-info">Generate Notes</button><span class="col-sm-4" width="150px"></span><button class="col-sm-2 btn btn-info">Generate Notes</button><span class="col-sm-2"></span>
+            <br/>
+         </div><br/>
+        </div>
+        
+        <div class="row" ng-show="y==1">
+            <div class="row"  style="color:black">
+            <p class="col-sm-12 text-center"> C++ Material</p>
+         </div><br/>
+         <div class="row" >
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/QwBSv4-_Lmk" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+            
+            <div><iframe width="300" height="200"  src="https://www.youtube.com/embed/L1z2dpCosXU" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+         </div><br/>
+         <div class="row" >  
+            <span class="col-sm-2" width="75px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-4" width="150px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-2"></span>
+            <br/>
+         </div><br/>
+         <div class="row" >
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/bsWWHo4KDHE" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+            
+            <div><iframe width="300" height="200"  src="https://www.youtube.com/embed/_b7odUc7lg0" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+         </div><br/>
+         <div class="row" >  
+            <span class="col-sm-2" width="75px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-4" width="150px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-2"></span>
+            <br/>
+         </div>
+
+
+
+
+
+
+<br/>
+
+        </div>
+        <div class="row" ng-show="z==1">
+        <div class="row" >
+            <p class="col-sm-12 text-center" style="color:black"> Python Material</p>
+         </div><br/>
+         <div class="row" >
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/hnxIRVZ0EyU" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+            
+            <div><iframe width="300" height="200"  src="https://www.youtube.com/embed/1yUn-ydsgKk" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+         </div><br/>
+         <div class="row" >  
+            <span class="col-sm-2" width="75px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-4" width="150px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-2"></span>
+            <br/>
+         </div><br/>
+         <div class="row" >
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/Neir-vgPyxw" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+            
+            <div><iframe width="300" height="200" src="https://www.youtube.com/embed/j2xhtI0WTew" frameborder="0" allowfullscreen class="col-sm-6"></iframe></div>
+         </div><br/>
+         <div class="row" >  
+            <span class="col-sm-2" width="75px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-4" width="150px"></span><button class="col-sm-2 btn btn-info" style="color:black">Generate Notes</button><span class="col-sm-2"></span>
+            <br/>
+         </div><br/>
+        </div>
+            
+                
+</div>
+</section>
+
+
+
+
+
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- Copy code -->
+    <script src="js/ZeroClipboard.js"></script>
+ 
+    <script src="js/script.js"></script>
+
+
+</body>
+ <script>
+      
+    </script>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link rel="icon shortcut" href="images/bird.ico">
+
+    <title>Techruiter</title>
+
+    <link href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="js/app_index.js"></script>
+
+   
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="myCtrl">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+            	<img src="images/work.png" class="navbar-brand">
+	          <a class="navbar-brand page-scroll" href="#page-top"><span class="hidden-sm hidden-xs">Techruiter</span></a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#example">Interview Analysis</a><!-- check button for image tweets and text,search for srch -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#walkthrough">Employers Information</a><!-- add reply all to this,filter tweets,follower tweets based on location
+
+                        notifications if new tweet comes,to push bullet,twitter time line should contain only tweets which have a lost of retweets,count set by user -->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#usecases">Skills Enhancement<span class="badge" style="color:Green">New</span></a>
+                    </li>
+                    <li>
+                    	<a href="myprof_candidate.html">My Profile</a>
+                    </li>
+                </ul>
+                
+
+            </div>
+            
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <section id="intro" class="section odd-section intro-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>
+                    	<img src="images/download.png" height="30" style="margin-top: -8px;">
+                    	What We Offer?
+                	</h1>
+                    <p class="lead">
+                    	Provide in depth analysis for your interview
+                	</p>
+                	<p> 
+                    	<b><em>Techruiter</em></b> can be used for: 
+                    	<ul>
+                    		<li>Providing insightful feedback on your interviews
+                    		<li>Help prepare for interviews
+                    		<li>Suggest Job suggestions
+                    		</ul>
+                    </p>
+                    <p>
+                    	This web app can easily be integrated into your LinkdeIn account. 
+                    	The future enhancements are
+                    	<ul>
+	                    	<li><a href="https://dev.twitter.com/rest/collections" target="_target">Video interview analysis</a>
+	                    	<li><a href="https://dev.twitter.com/web/tweet-button" target="_target">Better Tie-Ups with companies</a>
+	                    	<li><a href="https://dev.twitter.com/cards/overview" target="_target">Enhance the interview analysis to technical interviews</a>
+	                    	
+                    	</ul>
+                    </p>
+                   
+                </div>
+                <div class="col-lg-4">
+	                <div class="thumbnail hidden-xs hidden-sm hidden-md" style="margin-top: 70px;">
+	                	<a href="index_employer.html" class="btn btn-default" role="button" target="_target">
+	                		<img src="images/campaigns/example_accenture_.png" width="100%">
+                		</a>
+	            	</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="example" class="section even-section example-section">
+        <div class="container">
+        
+            <h1 style="margin-bottom: .5em;">
+	        	<a href="analysis_candidate.html">
+	        	<img src="images/download.png" height="30">
+            	Job Feed
+            	</a>
+        	</h1>
+
+			<div class="example" style="background-image: url(http://staffingtalk.com/wp-content/uploads/2013/06/work-at-google.jpg);">
+				<div class="example-inset">
+
+	                <div class="row">
+	                <div class="col-sm-2"></div>
+	                	<div class="col-sm-8">
+	                		<h3>
+	                			View your Job Feed
+                			</h3>
+                			<img src='http://staffingtalk.com/wp-content/uploads/2013/06/work-at-google.jpg' style="height:250px"> 
+​	                		<p><b>@Google Austin</b>
+	                			Ever since we opened our office in the music capital of the world, we’ve been infusing a little bit of Austin in all we do - from the conference rooms named for musicians to the Airstream trailer that serves as our front lobby desk. We mostly focus on sales, marketing and staffing, and like most of Google, we’re growing fast, with new, Texan-sized opportunities opening up all the time.
+	                			<br>
+	                		</p>
+	                		
+							</p> 
+	                	</div>
+	                	
+	                	<div class="col-sm-2"></div>
+	                </div>
+				</div>
+			</div>
+			<p>
+				
+			</p>
+        </div>
+    </section>
+
+    <section id="walkthrough" class="section odd-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    <div class="item active">
+      <a href="employers_info_candidate.html">
+      <h1>
+    	<img src="images/download.png" height="30" style="margin-top: -8px;">
+      	My Job Matches
+      </h1>
+      </a>
+      <div class="walkthrough-body">
+      
+<div class="row">
+	<div class="col-sm-8">
+		<p class="lead">View Your job matches in a customised version</p>
+		
+		<ol>
+			<li><h3>View the companies interested in you</h3>
+			<li><h3>Increase your skillset depending on your company</h3>
+			<li><h3>Get the company lists based on your location</h3>
+			<li><h3>Get the list of companies based on your salary range</h3>
+			<li><h3>Keep track of the companies to which you have applied and which arent</h3>
+		</ol>
+		
+	</div>
+	<div class="col-sm-4 hidden-sm hidden-xs">
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		    <img src="images/job.gif" width="100%">
+		  </div>
+		</div>
+	</div>
+</div>
+
+    </div>
+    
+  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="usecases" class="section even-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   <a href="sentiment_candidate.html">
+                    <h1>
+                    	<img src="images/download.png" height="30" style="margin-top: -8px;">
+                    	Group Apply
+                	</h1>
+                	</a>
+                    <p>
+                    	Apply to multiple jobs at a single time
+                	</p>
+					<div class="row">
+					  <div class="col-sm-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="https://askobama.twitter.com/" target="_target">
+					      	<img src="images/campaigns/example_wh.png" alt="...">
+				          </a>
+					      <div class="caption">
+					        <h4>White House Jobs</h4>
+					        <p><a href="https://askobama.twitter.com/" class="btn btn-default" role="button" target="_target">View Website</a>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="col-sm-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="http://interactive.nbcnews.com/nightly-news/williams-snowden/index.php?38432" target="_target">
+					      	<img src="images/campaigns/example_nbc.png" alt="...">
+					      </a>
+					      <div class="caption">
+					        <h4>NBC Jobs</h4>
+					        <p><a href="http://interactive.nbcnews.com/nightly-news/williams-snowden/index.php?38432" class="btn btn-default" role="button" target="_target">View Website</a>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="col-sm-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="index_employer.html" target="_target">
+					      	<img src="images/campaigns/example_accenture.png" alt="...">
+					      </a>
+					      <div class="caption">
+					        <h4>Accenture Jobs</h4>
+					        <p><a href="https://register.accenture.com/us-en/registration/Documents/big-data-mp_candidate.html#sf32530744" class="btn btn-default" role="button" >View Website</a>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="col-sm-6 col-md-3">
+					    <div class="thumbnail">
+					      <a href="http://sharks.nhl.com/club/page.htm?id=82861" target="_target">
+					        <img src="images/campaigns/example_nhl.png" alt="...">
+					      </a>
+					      <div class="caption">
+					        <h4>San Jose Jobs</h4>
+					        <p><a href="http://sharks.nhl.com/club/page.htm?id=82861" class="btn btn-default" role="button" target="_target">View Website</a>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+                    </p>
+                    
+					<!-- <center>
+                    	<a class="btn btn-lg btn-primary page-scroll" href="http://dev.twitter.com" target="_target">Read the documentation &nbsp;<i class="fa fa-chevron-right fa-2 "></i></a>
+                	</center> -->
+                	
+                	<br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- Copy code -->
+    <script src="js/ZeroClipboard.js"></script>
+ 
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
